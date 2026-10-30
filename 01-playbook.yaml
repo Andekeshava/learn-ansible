@@ -1,0 +1,7 @@
+- name: ping localhost
+  hosts: localhost #targets local host itself
+  connection: local #it will not expect creds
+  tasks: #tasks == modules == collection
+  - name: ping
+    ping:
+
