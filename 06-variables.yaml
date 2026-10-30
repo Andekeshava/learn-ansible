@@ -1,6 +1,6 @@
 - name: Task level varaible execution
-  hosts: local
-  connection: localhost
+  hosts: localhost
+  connection: local
   vars:
     tool: ansible
   tasks:
