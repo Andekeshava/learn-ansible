@@ -1,6 +1,6 @@
 - name: Install nginx
   hosts: roboshop-frontend
-  connection: 
+  # connection: 
   become: yes
   tasks:
   - name: Installing nginx
