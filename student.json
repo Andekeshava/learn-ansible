@@ -1,0 +1,29 @@
+{
+    "firstname": "Keshava",
+    "lastname": "Ande",
+    "Gender": "Male",
+    "address": [
+        {
+            "type": "Permanent",
+            "flat no": "201",
+            "area": "gachibowli",
+            "city": "Hyderabad",
+            "State": "Telangana"
+        },
+
+        {
+            "type": "temporary",
+            "flat no": "201",
+            "area": "kadapa",
+            "city": "kadapa",
+            "State": "andhra pradesh"
+        }
+    ],
+    
+    "skills": {
+        "OS": "Linux",
+        "Scripting": "Python and Bash",
+        "Configuration": "Ansible",
+        "IAC": "Terraform"
+    }
+}

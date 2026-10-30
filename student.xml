@@ -1,0 +1,18 @@
+<Student>
+     <firstname>Keshava</firstname>
+     <lastname>Ande</lastname>
+     <Birth>10-01-01</Birth>
+     <Gender>Male</Gender>
+     <address>
+        <address type = "permanent">
+            <housenumber>11-225</housenumber>
+            <street>Kadapa</street>
+            <city>Kadapa</city>
+        </address>    
+        <address type = "temporary">
+            <housenumber>201</housenumber>
+            <street>gachibowli</street>
+            <city>Hyderabad</city>
+        </address>        
+     </address>
+</>

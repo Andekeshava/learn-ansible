@@ -1,0 +1,33 @@
+- firstname: "Keshava"
+  lastname: "Ande"
+  gender: "Male"
+  addresses:
+  - type: "permanent"
+    house number: "201"
+    area: "gachibowli"
+    city: "HYD"
+  - type: "temporary"
+    house number: "205"
+    area: "kadapa"
+    city: "kadapa"
+  skills: 
+     OS: Linux
+     IDE: VsCode
+     CM: Ansible
+
+- firstname: "Keshava -1"
+  lastname: "Ande"
+  gender: "Male"
+  addresses:
+  - type: "permanent"
+    house number: "201"
+    area: "gachibowli"
+    city: "HYD"
+  - type: "temporary"
+    house number: "205"
+    area: "kadapa"
+    city: "kadapa"
+  skills: 
+     OS: Linux
+     IDE: VsCode
+     CM: Ansible
