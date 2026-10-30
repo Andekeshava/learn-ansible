@@ -1,0 +1,12 @@
+- name: variables demo
+  connection: local
+  hosts: localhost
+  vars:
+    name: keshava Ande
+    age: 26
+    gender: Male
+  tasks:
+  - name: variables demo
+    debug:
+      msg: I am {{ name }}, age{{ age }}, gender {{ gender }}
+       

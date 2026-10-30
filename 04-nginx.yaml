@@ -6,4 +6,4 @@
   - name: Installing nginx
     package:
       name: nginx
-      state: absent
+      state: present
