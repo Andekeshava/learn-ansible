@@ -5,6 +5,6 @@
   tasks:
   - name: passing variables through CLI
     debug:
-      msg: I am {{role}}
+      msg: My role in my present company is {{role}}
 
 # hear we are passing variaibles through cli , -e "role=Devops Engineer"      
