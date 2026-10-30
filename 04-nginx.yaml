@@ -1,0 +1,14 @@
+- name: Install nginx
+  hosts: roboshop-frontend
+  connection: 
+  become: yes
+  tasks:
+  - name: Installing nginx
+    package:
+      name: nginx
+      state: present
+
+  - name: Starting and enabling nginx
+    service:
+      state: started
+      enable: yes    
