@@ -1,0 +1,9 @@
+- name: Getting data from file
+  hosts: localhost
+  connection: local
+  vars_files:
+    - student-data.yaml
+  tasks:
+  - name: Getting metadata of student from vars_files
+    debug:
+      msg: I am {{name}} learning {{course}} course
