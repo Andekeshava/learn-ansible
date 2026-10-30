@@ -1,0 +1,10 @@
+- name: passing through cli
+  hosts: frontend
+  connection: ssh
+  become: yes
+  tasks:
+  - name: passing variables through CLI
+    debug:
+      msg: I am {{role}}
+
+# hear we are passing variaibles through cli , -e "role=Devops Engineer"      
