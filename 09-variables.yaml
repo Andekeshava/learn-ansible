@@ -1,0 +1,8 @@
+- name: Print varaible from inventory
+  hosts: frontend
+  connection: ssh
+  become: yes
+  tasks:
+  - name: Print name and age through inventory
+    debug:
+      msg: I am {{name}}, age:{{age}}, learning {{course}} course
