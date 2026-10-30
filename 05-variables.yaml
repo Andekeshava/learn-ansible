@@ -8,5 +8,4 @@
   tasks:
   - name: variables demo
     debug:
-      msg: I am {{ name }}, age{{ age }}, gender {{ gender }}
-       
+      msg: I am {{ name }}, age:{{ age }}, gender:{{ gender }}

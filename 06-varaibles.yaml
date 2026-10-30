@@ -1,0 +1,15 @@
+- name: Task level varaible execution
+  hosts: local
+  connection: localhost
+  vars:
+    tool: ansible
+  tasks:
+  - name: variables task playbook-1
+    debug:
+      msg: I am learning {{tool}}
+
+  - name: variables task playbook-2
+    vars:
+      tool: shell-scripting
+    debug:
+      msg: I completed {{tool}}  
