@@ -5,7 +5,7 @@
   - name: Installing nginx
     package:
       name: nginx
-      state: present
+      state: started
 
   - name: Starting and Enabling nginx
     service:
