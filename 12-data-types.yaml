@@ -12,7 +12,7 @@
     - Docker
     - AiOps
     - Security
-    live_sessions: yes
+    live_sessions: true
     more_details:
       trainer: Keshava Ande
       Institute: Join to Learn Skill 
