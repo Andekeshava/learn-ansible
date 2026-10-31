@@ -4,7 +4,8 @@
   tasks:
   - name: check roboshop user exist or not 
     command: id roboshop
-    registar: user_output
-    ignore_errors: true
+    register: user_output  # register is a keyword used to store the output of the id roboshop.
+    ignore_errors: true   # ignore_error is the keyword used to handle know errors.
     
+
 
