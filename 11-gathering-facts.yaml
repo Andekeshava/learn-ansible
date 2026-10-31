@@ -11,3 +11,4 @@
       msg: |
         Ip Address: {{ ansible_facts.default_ipv4.address }}    
         OS Family: {{ ansible_facts.os_family }}
+        OS Family: {{ ansible_facts['os_family'] }}
