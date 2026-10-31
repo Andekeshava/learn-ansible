@@ -6,6 +6,6 @@
   tasks:
     - name: install nginx in redhat
       package:
-        install: {{ tool }}
+        install: "{{ tool }}"
         state: present
       when: ansible_os_family = "Redhat"    
