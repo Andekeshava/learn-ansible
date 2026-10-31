@@ -1,9 +1,16 @@
 - name: install nginx in redhat
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: install nginx in redhat
-      package:
-        install: nginx
+      dnf :
+        name: nginx
         state: present
       when: ansible_facts.os_family == "RedHat"
+
+    - name: install nginx on ubuntu
+      apt :
+        name: nginx
+        state: present
+      when: ansible_facts.os_family == "Debian"   
