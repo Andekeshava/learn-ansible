@@ -1,0 +1,7 @@
+- name: filters demo
+  hosts: local
+  connection: local
+  tasks:
+  - name: print name of person
+    debug:
+      msg: " Hi I am {{ person-name | default('Keshava') }}"
