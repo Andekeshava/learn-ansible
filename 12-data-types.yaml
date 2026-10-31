@@ -12,7 +12,7 @@
     - Docker
     - AiOps
     - Security
-    live-sessions: yes
+    live_sessions: yes
     more_details:
       trainer: Keshava Ande
       Institute: Join to Learn Skill 
@@ -25,5 +25,5 @@
         name: {{ course }}: {{ course | type_debug }}
         course_duration_in_hrs: {{ total_hours }}: {{ total_hours | type_debug }}
         Tools_Coverd: {{ tools }}: {{ tools | type_debug }}
-        live-sessions: {{ live-sessions }} Live sessions only : {{ live-sessions | type_debug }}
+        live-sessions: {{ live_sessions }} Live sessions only : {{ live_sessions | type_debug }}
         More_about_course: {{ more_details }}: {{ more_details | type_debug }}
