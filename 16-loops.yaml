@@ -4,7 +4,7 @@
   tasks:
   - name: Printing names in a loops
     debug:
-      msg: I am {{ item }} # item is a reserved keyword used for loops
+      msg: I am {{ items }} # items is a reserved keyword used for loops
       loops:
       - Lakshmi
       - Chenna
