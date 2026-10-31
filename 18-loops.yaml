@@ -1,0 +1,16 @@
+- name: installing softwares
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    packages:
+    - { name: 'nginx' , state: 'absent' }
+    - { name: 'mysql' , state: 'present' }
+    - { name: 'htop' , state: 'absent'}
+    - { name: 'net-tools' , state: 'present' }
+  tasks:
+  - name: installing softwares
+    package:
+      name: "{{ item.name }}" 
+      state: "{{ item.state }}"
+    loop: "{{ packages }}"  

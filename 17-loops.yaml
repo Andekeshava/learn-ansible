@@ -9,7 +9,7 @@
     - htop
   tasks:
   - name: installing softwares 
-    dnf:
+    package:
       name: " {{ item }}"  
       state: present
     loop: "{{ packages }}"  
