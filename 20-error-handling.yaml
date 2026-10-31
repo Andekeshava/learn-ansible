@@ -4,5 +4,7 @@
   tasks:
   - name: check roboshop user exist or not 
     command: id roboshop
+    registar: user_output
+    ignore_errors: true
     
 
