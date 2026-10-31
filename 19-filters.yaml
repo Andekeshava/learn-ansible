@@ -1,7 +1,13 @@
 - name: filters demo
   hosts: local
   connection: local
+  vars:
+    topics: "linux, git, jenkins, ansible, docker, k8s, terraform"
   tasks:
   - name: print name of person
     debug:
       msg: " Hi I am {{ person | default('Keshava') }}"
+
+  - name: coverting string to list
+    debug:
+      msg: "Topics are: {{ topics | split(',') }}"    
