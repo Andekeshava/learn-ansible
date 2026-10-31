@@ -23,4 +23,4 @@
 
   - name: converting list to string and lowers case also
     debug:
-      msg: "Lower: {{ names | lower }}"    
+      msg: "Lower: {{ names | join(' ') | lower }}"    
