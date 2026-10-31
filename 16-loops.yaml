@@ -1,0 +1,12 @@
+- name: demos on loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: Printing names in a loops
+    debug:
+      msg: I am {{ item }} # item is a reserved keyword used for loops
+    loops:
+    - Lakshmi
+    - Chenna
+    - Keshava
+    - Ande  
