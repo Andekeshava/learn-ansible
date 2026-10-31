@@ -4,5 +4,10 @@
   tasks:
   - name: printing OS
     debug:
-      msg: OS redhat 
+      msg: OS distor redhat 
     when: ansible_facts.os_family == "RedHat"
+
+  - name: printing OS
+    debug:
+      msg: OS distor ubuntu
+    when: ansible_facts.os_family == "ubuntu"  
