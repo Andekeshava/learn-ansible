@@ -3,6 +3,11 @@
   connection: local
   vars:
     topics: "linux, git, jenkins, ansible, docker, k8s, terraform"
+    names:
+    - Ande
+    - Lakshmi
+    - Chenna
+    - Keshava
   tasks:
   - name: print name of person
     debug:
@@ -11,3 +16,7 @@
   - name: coverting string to list
     debug:
       msg: "Topics are: {{ topics | split(',') }}"    
+
+  - name: converting list to string
+    debug:
+      msg: "Name: {{ names | join(' ') }}"    
