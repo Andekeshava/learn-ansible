@@ -5,8 +5,8 @@
   - name: Printing names in a loops
     debug:
       msg: I am {{ item }} # item is a reserved keyword used for loops
-    loops:
-    - Lakshmi
-    - Chenna
-    - Keshava
-    - Ande  
+      loops:
+      - Lakshmi
+      - Chenna
+      - Keshava
+      - Ande  
