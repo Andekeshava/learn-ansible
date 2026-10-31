@@ -1,0 +1,11 @@
+- name: install nginx in redhat
+  hosts: local
+  connection: local
+  vars:
+    tool: nginx
+  tasks:
+    - name: install nginx in redhat
+      package:
+        install: {{ tool }}
+        state: present
+      when: ansible_os_family = "Redhat"    
