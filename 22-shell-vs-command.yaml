@@ -11,3 +11,11 @@
   - name: command modules
     debug:
       msg: "{{ ec2_user_output }}"   
+
+  - name: get the file
+    command: ls -la > /temp/files.txt
+    register: files_output
+
+  - name: read the file
+    debug:
+      msg: "{{ files_output }}"      
