@@ -2,7 +2,7 @@
   connection: local
   hosts: local
   become: yes
-  task:
+  tasks:
   - name: command vs shell modules
     command: cat /etc/passwd/ | grep ec2-user
     register: ec2-user-output
