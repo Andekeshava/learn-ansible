@@ -5,8 +5,8 @@
   tasks:
   - name: command vs shell modules
     command: cat /etc/passwd/ | grep ec2-user
-    register: ec2-user-output
+    register: ec2_user_output
 
   - name: command modules
     debug:
-      msg: "{{ ec2-user-output }}"   
+      msg: "{{ ec2_user_output }}"   
