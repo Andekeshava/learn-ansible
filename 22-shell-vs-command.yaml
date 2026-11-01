@@ -13,8 +13,8 @@
       msg: "{{ ec2_user_output }}"   
 
   - name: get the file
-    #command: ls -la > /temp/files.txt
-    shell: ls -la > /temp/files.txt
+    #command: ls -la > /tmp/files.txt
+    shell: ls -la > /tmp/files.txt
     register: files_output
 
   - name: print files info
